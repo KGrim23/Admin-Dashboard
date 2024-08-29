@@ -20,11 +20,11 @@ type Parent = {
 // HEADINGS
 const columns = [
   {
-    header: "info",
+    header: "Parent Name",
     accessor: "info",
   },
   {
-    header: "studentData",
+    header: "Children",
     accessor: "studentData",
     className: "hidden md:table-cell",
   },

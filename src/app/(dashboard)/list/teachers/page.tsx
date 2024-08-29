@@ -21,7 +21,7 @@ type Teacher = {
 
 const columns = [
   {
-    header: "info",
+    header: "Teacher Name",
     accessor: "info",
   },
   {
