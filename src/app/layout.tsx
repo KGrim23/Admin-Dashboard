@@ -20,7 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      return (
       <body>
         <div className="h-screen flex">
           {/* LEFT*/}
@@ -41,7 +40,6 @@ export default function RootLayout({
           </div>
         </div>
       </body>
-      );
     </html>
   );
 }
