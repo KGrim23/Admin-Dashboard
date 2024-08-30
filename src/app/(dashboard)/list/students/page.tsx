@@ -16,7 +16,7 @@ type Student = {
   phone?: string;
   address?: string;
   grade?: string[];
-  classes?: string[];
+  class?: string[];
 };
 
 const columns = [
@@ -34,11 +34,7 @@ const columns = [
     accessor: "grade",
     className: "hidden md:table-cell",
   },
-  {
-    header: "Classes",
-    accessor: "classes",
-    className: "hidden md:table-cell",
-  },
+
   {
     header: "Phone",
     accessor: "phone",
@@ -71,12 +67,11 @@ const StudentListPage = () => {
         />
         <div className="flex flex-col">
           <h3 className="font-semibold">{item.name}</h3>
-          <p className="text-xs text-gray-500">{item?.email}</p>
+          <p className="text-xs text-gray-500">{item.class}</p>
         </div>
       </td>
       <td className="hidden md:table-cell">{item.studentId}</td>
       <td className="hidden md:table-cell">{item.grade}</td>
-      <td className="hidden md:table-cell">{item.classes?.join(",")}</td>
       <td className="hidden md:table-cell">{item.phone}</td>
       <td className="hidden md:table-cell">{item.address}</td>
       <td>
@@ -97,7 +92,7 @@ const StudentListPage = () => {
     </tr>
   );
   return (
-    <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">
+    <div className="bg-white rounded-md flex-1">
       {/* TOP HEADINGS */}
       <div className="flex items-center justify-between">
         <h1 className="hidden md:block text-lg font-semibold">All Students</h1>
