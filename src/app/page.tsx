@@ -13,10 +13,10 @@ const HomePage = () => {
       <div className="w-full lg:w-2/3 flex flex-col gap-8">
         {/* USER CARDS */}
         <div className="flex gap-4 justify-between flex-wrap">
-          <UserCard type="Staff" />
-          <UserCard type="Teacher" />
-          <UserCard type="Student" />
-          <UserCard type="Parent" />
+          <UserCard type="Lilly" className="10R" />
+          <UserCard type="Ethan" className="6P" />
+          <UserCard type="Finance" className="Parent Pay" />
+          <UserCard type="Trips" className="2024/25" />
         </div>
         {/* MIDDLE CHART */}
         <div className="flex gap-4 flex-col lg:flex-row">
